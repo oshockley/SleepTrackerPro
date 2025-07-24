@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker Pro - Redirecting...</title>
+    <script>
+        // Automatically redirect to the sleep tracker app
+        window.location.href = './sleep-tracker-advanced.html';
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a0a1a 0%, #1a1a2e 50%, #16213e 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            border: 3px solid rgba(74, 144, 226, 0.3);
+            border-top: 3px solid #4a90e2;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <h2>Sleep Tracker Pro</h2>
+        <p>Redirecting to your sleep tracking app...</p>
+        <p><a href="./sleep-tracker-advanced.html" style="color: #4a90e2;">Click here if you're not redirected automatically</a></p>
+    </div>
+</body>
+</html>
